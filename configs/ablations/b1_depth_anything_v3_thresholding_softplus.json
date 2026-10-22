@@ -1,0 +1,40 @@
+{
+  "name": "b1_depth_anything_v3_thresholding_softplus",
+  "family": "baseline",
+  "paper_label": "B1",
+  "model": {
+    "emb_dims": 512,
+    "use_material_prior": false,
+    "use_text": false,
+    "composition": false,
+    "fill_factor": false,
+    "geometry": "original",
+    "volume_activation": "softplus",
+    "reciprocal_scale": 1.0,
+    "density_activation_file": "../density/emma.json",
+    "density_log_clip": 30.0
+  },
+  "data": {
+    "depth": "depth_anything_v3",
+    "segmentation": "thresholding",
+    "pc_dims": 1024
+  },
+  "train": {
+    "epochs": 18,
+    "batch_size": 68,
+    "workers": 8,
+    "val_workers": 0,
+    "prefetch_factor": 1,
+    "persistent_workers": true,
+    "lr": 0.0001,
+    "lr_schedule": "constant",
+    "clip_grad_norm": 5.0,
+    "freeze_image_encoder": true,
+    "training_mode": "train",
+    "seed": 0,
+    "device": "gpu",
+    "cudnn_benchmark": true,
+    "data_parallel": true,
+    "save_all_checkpoints": true
+  }
+}

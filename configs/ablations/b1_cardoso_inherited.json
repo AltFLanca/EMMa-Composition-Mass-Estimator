@@ -1,0 +1,43 @@
+{
+  "name": "b1_cardoso_inherited",
+  "family": "baseline",
+  "paper_label": "B1",
+  "model": {
+    "emb_dims": 512,
+    "use_material_prior": false,
+    "use_text": false,
+    "composition": false,
+    "fill_factor": false,
+    "geometry": "original",
+    "volume_activation": "relu",
+    "reciprocal_scale": 0.060106,
+    "density_activation_file": "../density/cardoso_image2mass.json",
+    "density_log_clip": null
+  },
+  "data": {
+    "depth": "glp",
+    "segmentation": "thresholding",
+    "pc_dims": 1024
+  },
+  "train": {
+    "epochs": 18,
+    "batch_size": 68,
+    "workers": 8,
+    "val_workers": 0,
+    "prefetch_factor": 1,
+    "persistent_workers": true,
+    "lr": 0.0001,
+    "lr_schedule": "legacy_poly",
+    "clip_grad_norm": 1.0,
+    "freeze_image_encoder": true,
+    "training_mode": "eval",
+    "seed": 0,
+    "device": "gpu",
+    "cudnn_benchmark": true,
+    "data_parallel": true,
+    "save_all_checkpoints": true,
+    "legacy_min_lr": 8e-06,
+    "legacy_max_lr": 3.5e-05,
+    "legacy_lr_power": 0.9
+  }
+}

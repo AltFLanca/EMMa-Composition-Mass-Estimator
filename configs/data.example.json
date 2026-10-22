@@ -1,0 +1,34 @@
+{
+  "emma_root": "/path/to/EMMa",
+  "asins": {
+    "pre_augmentation": "/path/to/pre_augmentation_filtered_asins.npy",
+    "post_augmentation": "/path/to/post_augmentation_filtered_asins.npy",
+    "train": "/path/to/final_filtered_train_asins.npy",
+    "val_train": "/path/to/smaller_training_validation_asins.npy",
+    "val": "/path/to/full_validation_asins.npy",
+    "test": "/path/to/test_asins.npy"
+  },
+  "valid_asins": {
+    "glp": "/path/to/glp_valid_asins.npy",
+    "glp_corrected": "/path/to/glp_corrected_valid_asins.npy",
+    "depth_anything_v3": "/path/to/depth_anything_v3_valid_asins.npy",
+    "thresholding": "/path/to/thresholding_valid_asins.npy",
+    "sam3": "/path/to/sam3_valid_asins.npy",
+    "clip": "/path/to/clip_valid_asins.npy"
+  },
+  "depth": {
+    "glp": "/path/to/glp_depth.h5",
+    "glp_corrected": "/path/to/glp_corrected_depth.h5",
+    "depth_anything_v3": "/path/to/depth_anything_v3.h5"
+  },
+  "segmentation": {
+    "thresholding": "/path/to/thresholding_segmentation.h5",
+    "sam3": "/path/to/sam3_segmentation.h5"
+  },
+  "text_embeddings": "/path/to/text_embeddings.h5",
+  "density_lut": "/path/to/material_density_lookup.json",
+  "density_lut_unit": "g_cm3",
+  "density_range_lut": "/path/to/material_density_range_lookup.json",
+  "single_material_asins": "/path/to/single_material_asins.npy",
+  "single_material_materials": "/path/to/single_material_materials.npy"
+}
