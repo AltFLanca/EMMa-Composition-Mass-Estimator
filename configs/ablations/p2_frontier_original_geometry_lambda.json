@@ -1,7 +1,7 @@
 {
   "name": "p2_frontier_original_geometry_lambda",
   "family": "composition",
-  "paper_label": "P2b",
+  "paper_label": "P2a",
   "model": {
     "emb_dims": 512,
     "use_material_prior": true,
