@@ -1,7 +1,7 @@
 [project]
 name = "emma-composition-mass-estimator"
 version = "0.1.0"
-description = "Add your description here"
+description = "Research code for estimating object mass from material mixtures and geometry."
 readme = "README.md"
 requires-python = ">=3.10.19"
 dependencies = [
